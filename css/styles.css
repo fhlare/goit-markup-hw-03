@@ -58,7 +58,7 @@ font-family: var(--primary-font);
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /* HEADER */
@@ -190,6 +190,9 @@ font-family: var(--primary-font);
 }
 
 .order-button{
+  display: block;
+  height: 56px;
+  border: none;
   margin-left: auto;
   margin-right: auto;
   min-width: 169px;
@@ -198,6 +201,7 @@ font-family: var(--primary-font);
   padding-right: 32px;
   padding-left: 32px;
   border-radius: 4px;
+  cursor: pointer;
 
   font-family: inherit;
     font-weight: 500;
@@ -321,7 +325,13 @@ font-family: var(--primary-font);
   padding-bottom: 32px;
   padding-right: 16px;
   padding-left: 16px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
+
+
 
 .team-list{
   color: var(--color-slate);
@@ -342,8 +352,12 @@ font-family: var(--primary-font);
   background-color: var(--color-navy-blue-modal);
 }
 
+.logo-footer{
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .footer-information{
-  margin-top: 16px;
   max-width: 264px;
   color: var(--color-cloud);
 }
@@ -355,19 +369,23 @@ font-family: var(--primary-font);
 .button-item{
   display: flex;
   justify-content: center;
+  margin-bottom: 72px;
 }
 
 .button-item-list:not(:last-child){
   margin-right: 24px;
 }
 
-.button-item-list{
-  padding-top: 96px;
-  margin-bottom: 72px;
+.portfolio-section{
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 
+/* .button-item-list{
+  margin-bottom: 72px;
+} */
+
 .images-list{
-  padding-bottom: 120px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
@@ -377,6 +395,19 @@ font-family: var(--primary-font);
 .images-item{
   width: calc((100% - (24px * 2)) / 3);
   border: 1px solid var(--color-cornflower);
+}
+
+.about-doing{
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid var(--color-cornflower);
+  border-top: none;
+}
+
+.main-titles{
+  margin-bottom: 8pxe;
 }
 
 .button-filters{
@@ -402,6 +433,8 @@ font-family: var(--primary-font);
 
 .button-filters:hover,
 .button-filters:focus{
+  border: 1px solid transparent;
+
   color: var(--color-white);
   background-color: var(--color-ocean);
 }
